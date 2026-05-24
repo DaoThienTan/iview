@@ -146,6 +146,9 @@
                 }
                 this.$emit('on-ok');
             },
+            removeLoading () {
+                this.buttonLoading = false;
+            },
             EscClose (e) {
                 if (this.visible && this.closable) {
                     if (e.keyCode === 27) {
